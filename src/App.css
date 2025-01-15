@@ -1,0 +1,90 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.header-info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.main-content {
+    flex: 1;
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./IMG/background.jpg");
+    object-fit: cover;
+}
+
+.main-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    max-width: 800px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.app img {
+    width: 800px;
+    height: auto;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.app img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 1);
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+    position: sticky;
+    bottom: 0;
+    z-index: 1000;
+}
+
+
